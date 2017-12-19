@@ -1,6 +1,6 @@
-resource "aws_network_acl" "mesh-vpc-network-acl" {
-    vpc_id = "${aws_vpc.mesh-vpc.id}"
-    subnet_ids = ["${aws_subnet.mesh-vpc-subnet1.id}", "${aws_subnet.mesh-vpc-subnet2.id}"]
+resource "aws_network_acl" "finalze-vpc-network-acl" {
+    vpc_id = "${aws_vpc.finalze-vpc.id}"
+    subnet_ids = ["${aws_subnet.finalze-vpc-subnet1.id}", "${aws_subnet.finalze-vpc-subnet2.id}"]
     
     egress {
         protocol   = "-1"
@@ -21,7 +21,7 @@ resource "aws_network_acl" "mesh-vpc-network-acl" {
     }
 
     tags {
-        Name = "mesh-vpc-network-acl"
+        Name = "finalze-vpc-network-acl"
     }
 }
 

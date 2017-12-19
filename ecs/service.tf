@@ -1,8 +1,8 @@
-resource "aws_ecs_service" "mesh-ecs-service" {
+resource "aws_ecs_service" "finalze-ecs-service" {
   	name            = "${var.ecs-service-name}"
   	iam_role        = "${var.ecs-service-role-arn}"
-  	cluster         = "${aws_ecs_cluster.mesh-ecs-cluster.id}"
-  	task_definition = "${aws_ecs_task_definition.mesh-sample-definition.arn}"
+  	cluster         = "${aws_ecs_cluster.finalze-ecs-cluster.id}"
+  	task_definition = "${aws_ecs_task_definition.finalze-sample-definition.arn}"
   	desired_count   = 1
 
   	load_balancer {

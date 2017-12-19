@@ -2,18 +2,18 @@
 variable "ecs-target-group-arn" {}
 
 variable "ecs-cluster-name" {
-    default = "mesh-ecs-cluster"
+    default = "finalze-ecs-cluster"
 }
 
 variable "ecs-service-role-arn" {
-    default = "mesh-ecs-cluster"
+    default = "finalze-ecs-cluster"
 }
 
 variable "ecs-service-name" {
-    default = "mesh-ecs-service"
+    default = "finalze-ecs-service"
 }
 
 variable "ecs-load-balancer-name" {
-    default = "mesh-ecs-load-balancer"
+    default = "finalze-ecs-load-balancer"
 }
 

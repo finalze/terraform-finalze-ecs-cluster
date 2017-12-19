@@ -1,4 +1,4 @@
-resource "aws_ecs_task_definition" "mesh-sample-definition" {
-    family                = "mesh-sample-definition"
+resource "aws_ecs_task_definition" "finalze-sample-definition" {
+    family                = "finalze-sample-definition"
     container_definitions = "${file("./ecs/task-definition.json")}"
 }
